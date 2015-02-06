@@ -56,7 +56,7 @@ def printAgeGroupBreakdown(agroup):
     print "Age Group %s: %d participants, %.2f percent of total entrants"%(agroup, len(agList), (len(agList)*100.0)/(TotalEntrants*1.0))
 
 def printMasterAgeGroupBreakdown():
-    print "Total Entrants: %d\n\n"%TotalEntrants
+    print "\n\n################### Total Entrants: %d ######################\n\n"%TotalEntrants
     for agroup in AgeGroupOrder:
         printAgeGroupBreakdown(agroup)
 
@@ -204,7 +204,7 @@ if __name__ == "__main__":
     if path.exists(fileToParse):
         rawLines = readFile(fileToParse)
         parseLines(rawLines)
-        #printAgeGroup(M18_24)
+        printAgeGroup(M18_24)
         printMasterAgeGroupBreakdown()
         if len(sys.argv) >= 3:
             allocateKonaSlots(int(sys.argv[2]))
