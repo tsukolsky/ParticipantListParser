@@ -198,13 +198,32 @@ def parseLines(rawLines):
     return
     
 if __name__ == "__main__":
-    fileToParse = sys.argv[1]
-    if DEBUG: print "Looking for file %s"%fileToParse
+    ## Get Command line arguments
+    pointOfFailure = 0
+    fileToParse = ""
+    numSlots = 0
+    outputFile = ""
+    try:
+        fileToParse = sys.argv[1]
+        pointOfFailure += 1
+        numSlots = int(sys.argv[2])
+        pointOfFailure += 2
+        outputFile = sys.argv[3]
+        pointOfFailure += 4
+    except:
+        if (pointOfFailure & 1 ) == 0:
+            print "No file to parse! Exiting..."
+            sys.exit(1)
+        elif (pointOfFailure & 4) == 0:
+            if DEBUG: print "No output file..."
+        elif (pointOfFailure & 2) == 0:
+            if DEBUG: print "No kona slots..."
+        
     initializeDictionary()
     if path.exists(fileToParse):
         rawLines = readFile(fileToParse)
         parseLines(rawLines)
         printAgeGroup(M18_24)
         printMasterAgeGroupBreakdown()
-        if len(sys.argv) >= 3:
-            allocateKonaSlots(int(sys.argv[2]))
+        if (pointOfFailure & 2) == 1:
+            allocateKonaSlots(int(numSlots))
