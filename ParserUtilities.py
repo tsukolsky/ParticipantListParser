@@ -1,8 +1,8 @@
 specialCharacters = ["Intl State", 0xFF]
 STATE_PROVINCE = 'State/Province'
 COLUMN_SEPERATOR = ''
-FEMALE = 'F'
-MALE = 'M'
+FEMALE = ['F', 'FEMALE']
+MALE = ['M', 'MALE']
 NEW_PAGE_DELIMITER = '\x0c'
 
 # Field Types in PDF Output

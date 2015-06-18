@@ -87,13 +87,13 @@ def saveParticipant(partic):
     global TotalEntrants
     participantAge = partic.getAge()
     gender = partic.getGender()
-    if gender == FEMALE:
+    if gender in FEMALE:
         for agName, agRange in FemaleAgeGroups.iteritems():
             if participantAge in agRange:
                 # Found a participant in this age group
                 MasterAgeGroup[agName].append(partic)
                 TotalEntrants += 1
-    elif gender == MALE:
+    elif gender in MALE:
         for agName, agRange in MaleAgeGroups.iteritems():
             if participantAge in agRange:
                 # Found a participant in this age group
@@ -103,7 +103,7 @@ def saveParticipant(partic):
 def readFile(fileToParse):
     fin = open(fileToParse, 'r')
     lines = fin.read().splitlines()
-    if DEBUG: print "Read in %d lines from file %s"%(len(lines), TEXT_FILE)
+    if DEBUG: print "Read in %d lines from file %s"%(len(lines), fileToParse)
     return lines
 
 def goToNextColumn(currentColumn):
@@ -114,7 +114,7 @@ def getNumberOfParticipantsInPage(linesInPage):
     # Go through and look for the first 'M' or 'F' character, and last
     numOfParticipants = 0
     for line in linesInPage:
-        if line == MALE or line == FEMALE:
+        if line in MALE or line in FEMALE:
             numOfParticipants += 1
     
     return numOfParticipants
@@ -193,37 +193,44 @@ def parseLines(rawLines):
 
         whichLine += 1
     
-    print "Failed to retrieve entrants from pages %s."%(", ".join(badPages))
+    estimatedLostEntrants = 0
+    for badPage in badPages:
+        if int(badPage) == pageNum:
+            estimatedLostEntrants += 20
+        else:
+            estimatedLostEntrants += 35
+            
+    print "Failed to retrieve entrants from pages %s. Estimated entrants missed is %d"%(", ".join(badPages), estimatedLostEntrants)
     
     return
     
 if __name__ == "__main__":
     ## Get Command line arguments
-    pointOfFailure = 0
     fileToParse = ""
-    numSlots = 0
+    numSlots = -1
     outputFile = ""
     try:
+        if sys.argv[1] == 'h':
+            print "Arg1: File to parse, Arg2: Number of kona slots, Arg3: Output File"
+            raise Exeception
         fileToParse = sys.argv[1]
-        pointOfFailure += 1
         numSlots = int(sys.argv[2])
-        pointOfFailure += 2
         outputFile = sys.argv[3]
-        pointOfFailure += 4
     except:
-        if (pointOfFailure & 1 ) == 0:
+        if fileToParse is "":
             print "No file to parse! Exiting..."
             sys.exit(1)
-        elif (pointOfFailure & 4) == 0:
+        if outputFile is "":
             if DEBUG: print "No output file..."
-        elif (pointOfFailure & 2) == 0:
+        if  numSlots == -1:
             if DEBUG: print "No kona slots..."
         
     initializeDictionary()
     if path.exists(fileToParse):
         rawLines = readFile(fileToParse)
         parseLines(rawLines)
-        printAgeGroup(M18_24)
         printMasterAgeGroupBreakdown()
-        if (pointOfFailure & 2) == 1:
+        printAgeGroup(M18_24)
+        if numSlots != -1:
+            print "Allocating %d Kona Slots"%(int(numSlots))
             allocateKonaSlots(int(numSlots))
