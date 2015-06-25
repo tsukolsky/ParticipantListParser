@@ -1,0 +1,67 @@
+Failed to retrieve entrants from pages 1, 2, 8. Estimated entrants missed is 105
+** Manually Retrived 1,2,8 - Found 1 entrant in M18-24 Jacob Dolecki **
+
+
+################### Total Entrants: 1088 ######################
+
+
+Age Group Male 18-24: 28 participants, 2.57 percent of total entrants
+Age Group Male 25-29: 59 participants, 5.42 percent of total entrants
+Age Group Male 30-34: 90 participants, 8.27 percent of total entrants
+Age Group Male 35-39: 97 participants, 8.92 percent of total entrants
+Age Group Male 40-44: 155 participants, 14.25 percent of total entrants
+Age Group Male 45-49: 144 participants, 13.24 percent of total entrants
+Age Group Male 50-54: 127 participants, 11.67 percent of total entrants
+Age Group Male 55-59: 54 participants, 4.96 percent of total entrants
+Age Group Male 60-64: 31 participants, 2.85 percent of total entrants
+Age Group Male 65-69: 11 participants, 1.01 percent of total entrants
+Age Group Male 70-74: 2 participants, 0.18 percent of total entrants
+Age Group Male 75-79: 1 participants, 0.09 percent of total entrants
+Age Group Male 80+: 0 participants, 0.00 percent of total entrants
+Age Group Female 18-24: 8 participants, 0.74 percent of total entrants
+Age Group Female 25-29: 19 participants, 1.75 percent of total entrants
+Age Group Female 30-34: 51 participants, 4.69 percent of total entrants
+Age Group Female 35-39: 40 participants, 3.68 percent of total entrants
+Age Group Female 40-44: 49 participants, 4.50 percent of total entrants
+Age Group Female 45-49: 47 participants, 4.32 percent of total entrants
+Age Group Female 50-54: 42 participants, 3.86 percent of total entrants
+Age Group Female 55-59: 24 participants, 2.21 percent of total entrants
+Age Group Female 60-64: 9 participants, 0.83 percent of total entrants
+Age Group Female 65-69: 0 participants, 0.00 percent of total entrants
+Age Group Female 70-74: 0 participants, 0.00 percent of total entrants
+Age Group Female 75-79: 0 participants, 0.00 percent of total entrants
+Age Group Female 80+: 0 participants, 0.00 percent of total entrants
+
+
+=========================================
+Age Group: Male 18-24 (28 Participants)
+-----------------------------------------
+BLAKE COLEMAN, 21, MALE, ON                             - Should be slow
+CANNING-CHOI ALEXANDER, 22, MALE, ON                    - No Info
+CAREY JOE, 22, MALE, NH                                 - No Info
+CHOE SOOJEONG, 21, MALE, ON                             - No Info
+CONDIT JEFF, 24, MALE, WI                               - Fast Sprint Runner
+COUSINO WILLIAM, 19, MALE, OH                           - Slow
+DEARING PHILLIP, 22, MALE, MO                           - No Info
+DECKER DALE, 23, MALE, ON                               - Maybe? Spartan Super Race
+DOLECKI, JACOB, 21, MALE, MI                            - Does he have the bike legs? Probably not
+EVANS  WILLIAM , 22, MALE, BC                           - No Info
+FARIAS DAVID, 20, MALE, ON                              - Nope, 4:09 marathon
+FAUER ALEX, 20, MALE, MI                                - **Good, 1:26 half marathon, 5:07 @ steelhead, 3:03 marathon in '14 -> Pure bread runner from MI, not bike or swimming background!
+GARCIA MAURICIO, 21, MALE, IL                           - Nope, 2:11 half marathon
+HARROP MATT, 23, MALE, ON                               - Probably not, 5:15 half in '14
+HERSON MARK, 24, MALE, ON                               - Nope
+KAKOULLIS CHRISTOPHER, 18, MALE, Essex                  - NOpe, 1:43 half marathon
+LUCERO JACOB, 23, MALE, MI                              - ** Good, 4:28 @ Boulder Half Distance -> Was a rower, i dont think so...
+MOTHERWAY BILLY, 24, MALE, GA                           - NO info
+O’MALLEY GREG, 21, MALE, NY                             - No Info
+QUEEN ZACHARY, 23, MALE, VA                             - Nope, no triathlons
+REID CARTER, 21, MALE, MI                               - Not much info
+SEIBT ERIK, 24, MALE, KY                                - Nope, 5:20 @ Muncie IN
+SOMERS-NEAL SHAWN, 22, MALE, ON                         - Talent, not enough training though
+SUKOLSKY TODD, 24, MALE, FL                             - Maybe, no established racing...
+UZIEMBLO URSUS, 21, MALE, MI                            - Smaller races, not too good.
+WILLERT THOMAS , 20, MALE, ON                           - Slow
+WINGROVE STEVEN, 24, MALE, ON                           - Nope, Mont Tremblant 11:17
+WONG PHILIP, 22, MALE, ON                               - No Info
+YEZMAN RYAN, 22, MALE, VA                               - Nope
